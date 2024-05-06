@@ -1,5 +1,8 @@
 import "./Login.css";
 // import CustomButton from "../Components/CustomButton"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import CustomInput from "../Components/CustomInput";
 
 const Login = () => {
   return (
@@ -9,11 +12,23 @@ const Login = () => {
 
       {/* LOGIN FORM */}
       <div className="login_container">
-            <div className="login_box">
-                <div className="login_title">Login</div>
-            </div>
-            <div className="login_box">
-            </div>
+        <div className="login_box">
+          <div className="login_title">Login</div>
+            
+            
+          <CustomInput
+            icon={
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                fontSize={40}
+                color="#898989"
+              />
+            }
+            placeholder="Email Address"
+            type="email"
+          />
+        </div>
+        <div className="login_box"></div>
       </div>
     </div>
   );

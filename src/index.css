@@ -10,12 +10,14 @@
   /* Variables */
   --main-font: "Plus Jakarta Sans", sans-serif;
   --primary-color: #3355FF;
+  --sub-primary-color: #0339A4;
   --secondary-color: #FFD06C;
   --tertiary-color: #B99470;
   --global-red: #CF3438;
   --global-purple: #8D4BFA;
   --global-blue: #5E60CD
   --global-dark-blue: #343957;
+  --global-grey: #898989
 }
 
 body{
