@@ -10,6 +10,8 @@ const CustomButton = ({
     hoverColor,
     hoverTransformScale,
     borderRadius,
+    padding,
+    color,
     ...rest
 }) => {
     const buttonStyle = {
@@ -18,16 +20,18 @@ const CustomButton = ({
         fontSize: fontSize,
         fontWeight: fontWeight,
         borderRadius: borderRadius,
+        padding: padding,
+        color,
         transition: 'transform 0.3s',
         ...(hoverColor && {'&:hover': {backgroundColor: hoverColor}}),
         ...(hoverTransformScale && {'&:hover': {transform: `scale(${hoverTransformScale})`}})
     };
 
     return (
-        <button style={buttonStyle} {...rest}>
+        <div style={buttonStyle} {...rest}>
             {icon && <span>{icon}</span>}
             {children}  
-        </button>
+        </div>
     );
 };
 
@@ -41,6 +45,8 @@ CustomButton.propTypes = {
     hoverColor: PropTypes.string,
     hoverTransformScale: PropTypes.number,
     borderRadius: PropTypes.string,
+    padding: PropTypes.string,
+    color: PropTypes.string
   };
   
   CustomButton.defaultProps = {
@@ -49,6 +55,8 @@ CustomButton.propTypes = {
     fontSize: '1em',
     fontWeight: '500',
     borderRadius: '8px', 
+    padding: '1rem',
+    color: '#ffffff '
   };
   
   export default CustomButton;
