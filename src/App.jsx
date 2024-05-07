@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./Auth/Login";
-import Dashboard from "./Dashboard";
+import Dashboard from "./Dashboard/Dashboard";
 
 const App = () => {
   return (

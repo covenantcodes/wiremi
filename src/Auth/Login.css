@@ -253,3 +253,11 @@
   justify-content: center;
   padding: 3rem 0rem 2rem;
 }
+
+.custom-animation{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

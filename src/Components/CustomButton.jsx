@@ -14,6 +14,7 @@ const CustomButton = ({
     padding,
     color,
     width,
+    onClick,
     ...rest
 }) => {
     const buttonStyle = {
@@ -39,7 +40,7 @@ const CustomButton = ({
     };
 
     return (
-        <div style={buttonStyle} {...rest}>
+        <div style={buttonStyle} onClick={onClick} {...rest}>
             {icon && <span style={iconStyle}>{icon}</span>}
             {children}  
         </div>
@@ -59,7 +60,8 @@ CustomButton.propTypes = {
     borderRadius: PropTypes.string,
     padding: PropTypes.string,
     color: PropTypes.string,
-    width: PropTypes.string
+    width: PropTypes.string,
+    onClick: PropTypes.func
 };
   
 CustomButton.defaultProps = {

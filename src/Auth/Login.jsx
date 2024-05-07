@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Lottie from "lottie-react";
 import "./Login.css";
 import CustomButton from "../Components/CustomButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -5,9 +7,21 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../Components/CustomInput";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import loadingData from "../../img/loading.json";
 
 const Login = () => {
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    setIsLoggingIn(true);
+    // Simulate login process
+    setTimeout(() => {
+      navigate("/Dashboard");
+    }, 2000);
+  };
+
   return (
     <div className="main_container">
       <div className="semi-circle top-left"></div>
@@ -16,10 +30,7 @@ const Login = () => {
       {/* LOGIN FORM */}
       <div className="login_container">
         <div className="login_box-bg">
-            <img
-              src="../../img/logo.png"
-              className="logo_img"
-            />
+          <img src="../../img/logo.png" className="logo_img" />
         </div>
         <div className="login_box">
           <div className="login_title">Login</div>
@@ -64,13 +75,20 @@ const Login = () => {
 
           {/* LOGIN BUTTON */}
           <div className="login_button">
-            <CustomButton
-              icon={<FontAwesomeIcon icon={faDoorOpen} />}
-              backgroundColor="var(--sub-primary-color)"
-              fontWeight="700"
-            >
-              LOGIN
-            </CustomButton>
+            {isLoggingIn ? (
+              <div className="custom-animation">
+                <Lottie animationData={loadingData}  style={{ width: '200px', height: '200px' }}/>
+              </div>
+            ) : (
+              <CustomButton
+                onClick={handleLogin}
+                icon={<FontAwesomeIcon icon={faDoorOpen} />}
+                backgroundColor="var(--sub-primary-color)"
+                fontWeight="700"
+              >
+                LOGIN
+              </CustomButton>
+            )}
           </div>
         </div>
       </div>
