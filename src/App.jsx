@@ -1,8 +1,15 @@
-import "./App.css"
-import Login from "./Auth/Login"
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Login from "./Auth/Login";
+import Dashboard from "./Dashboard";
 
 const App = () => {
-  return <Login/>
-}
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="Dashboard" element={<Dashboard />} />
+    </Routes>
+  );
+};
 
 export default App;
