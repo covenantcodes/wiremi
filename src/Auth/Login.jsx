@@ -1,7 +1,9 @@
 import "./Login.css";
-// import CustomButton from "../Components/CustomButton"
+import CustomButton from "../Components/CustomButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faKey } from "@fortawesome/free-solid-svg-icons";
+import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../Components/CustomInput";
 
 const Login = () => {
@@ -12,23 +14,64 @@ const Login = () => {
 
       {/* LOGIN FORM */}
       <div className="login_container">
+        <div className="login_box-bg">
+            <img
+              src="../../img/logo.png"
+              className="logo_img"
+            />
+        </div>
         <div className="login_box">
           <div className="login_title">Login</div>
-            
-            
-          <CustomInput
-            icon={
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                fontSize={40}
-                color="#898989"
+
+          <div className="login_input">
+            <CustomInput
+              icon={
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  fontSize={29}
+                  color="#898989"
+                />
+              }
+              placeholder="Input your user ID or Email"
+              type="email"
+            />
+
+            <CustomInput
+              icon={
+                <FontAwesomeIcon icon={faKey} fontSize={29} color="#898989" />
+              }
+              placeholder="Input your Password"
+              type="password"
+            />
+          </div>
+
+          <div className="login_extras">
+            {/* Remember Me checkbox */}
+            <div className="checkbox-wrapper-1">
+              <input
+                id="example-1"
+                className="substituted"
+                type="checkbox"
+                aria-hidden="true"
               />
-            }
-            placeholder="Email Address"
-            type="email"
-          />
+              <label htmlFor="example-1">Remember Me</label>
+            </div>
+
+            {/* Forgot Password link */}
+            <div className="login_forgot">Forgot Password?</div>
+          </div>
+
+          {/* LOGIN BUTTON */}
+          <div className="login_button">
+            <CustomButton
+              icon={<FontAwesomeIcon icon={faDoorOpen} />}
+              backgroundColor="var(--sub-primary-color)"
+              fontWeight="700"
+            >
+              LOGIN
+            </CustomButton>
+          </div>
         </div>
-        <div className="login_box"></div>
       </div>
     </div>
   );
