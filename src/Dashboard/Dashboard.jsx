@@ -9,7 +9,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import CustomButton from "../Components/CustomButton";
 
 // FOR SIDEBAR
-import { Sidebar, Menu, MenuItem, useProSidebar, Badge, SubMenu } from "react-pro-sidebar";
+import Badge from "../Components/Badge";
+import { Sidebar, Menu, MenuItem, useProSidebar, SubMenu } from "react-pro-sidebar";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -127,10 +128,10 @@ const Dashboard = () => {
               <div>Main</div>
             </div>
             <SubMenu
-                label="Charts"
+                label="Dashboard"
                 icon={<HomeRoundedIcon />}
                 suffix={
-                  <Badge variant="danger" shape="circle">
+                  <Badge variant="info" shape="square">
                     6
                   </Badge>
                 }
@@ -139,7 +140,7 @@ const Dashboard = () => {
                 <MenuItem> Line charts</MenuItem>
                 <MenuItem> Bar charts</MenuItem>
               </SubMenu>
-            <MenuItem icon={<HomeRoundedIcon />}>Dashboard</MenuItem>
+            <MenuItem icon={<HomeRoundedIcon />}> Dashboard </MenuItem>
             <MenuItem icon={<PeopleOutlinedIcon />}>Team</MenuItem>
             <MenuItem icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
             <MenuItem icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>
