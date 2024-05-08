@@ -14,6 +14,8 @@ const CustomButton = ({
     padding,
     color,
     width,
+    borderWidth,
+    borderColor,
     onClick,
     ...rest
 }) => {
@@ -30,6 +32,9 @@ const CustomButton = ({
         color: color,
         width: width,
         cursor: 'pointer',
+        borderWidth: borderWidth,
+        borderColor: borderColor,
+        borderStyle: 'solid', // Adding border style
         transition: 'transform 0.3s',
         ...(hoverColor && {'&:hover': {backgroundColor: hoverColor}}),
         ...(hoverTransformScale && {'&:hover': {transform: `scale(${hoverTransformScale})`}})
@@ -61,6 +66,8 @@ CustomButton.propTypes = {
     padding: PropTypes.string,
     color: PropTypes.string,
     width: PropTypes.string,
+    borderWidth: PropTypes.string,
+    borderColor: PropTypes.string, 
     onClick: PropTypes.func
 };
   
@@ -73,7 +80,9 @@ CustomButton.defaultProps = {
     padding: '1rem',
     color: '#ffffff',
     width: '7rem',
-    iconSpacing: '0.5rem' 
+    iconSpacing: '0.5rem',
+    borderWidth: '0px', 
+    borderColor: '#000000', 
 };
   
 export default CustomButton;

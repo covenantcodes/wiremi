@@ -67,6 +67,7 @@ const CustomSideBar = () => {
             style={{
               padding: "1.5rem",
               textAlign: "left",
+              color: "var(--global-icon)",
               fontFamily: "var(--main-font)",
             }}
           >
