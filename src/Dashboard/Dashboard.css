@@ -129,23 +129,14 @@
   padding-left: 1.3rem;
 }
 
-.siderbar_container{
-  height: 100vh; 
-  display: flex
+.main_body_dashboard{
+  display: flex;
+  flex-direction: row;
+
 }
 
-.sidebar_container .css-dip3t8{
-  background: var(--global-sidebar);
-}
-
-.main_sidebar{
-height:91.5vh;
-width: 30%;
-color: white
-}
-
-.sidebar_section_title{
-  padding: 1.5rem;
-  text-align: center;
-  font-family: var(--main-font);
+.side_body_dashboard{
+  margin-left: 2.6%;
+  width: 83%;
+  padding: 2rem;
 }

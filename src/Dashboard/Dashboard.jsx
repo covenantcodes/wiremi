@@ -7,16 +7,11 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import CustomButton from "../Components/CustomButton";
+import CustomSideBar from "../Components/CustomSideBar/CustomSideBar";
 
-// FOR SIDEBAR
-import Badge from "../Components/Badge";
-import { Sidebar, Menu, MenuItem, useProSidebar, SubMenu } from "react-pro-sidebar";
-import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import {
+  useProSidebar,
+} from "react-pro-sidebar";
 
 const Dashboard = () => {
   const { collapseSidebar, isCollapsed } = useProSidebar();
@@ -101,53 +96,10 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className="main_body_dashboard">
+            <CustomSideBar/>
 
-      <div id="app" className="sidebar_container">
-        <Sidebar className="main_sidebar">
-          <Menu
-            menuItemStyles={{
-              icon: {
-                color: "var(--global-icon)",
-              },
-              label: () => ({
-                fontWeight: 350,
-                fontFamily: "var(--main-font)",
-                fontSize: "19px"
-              }),
-            }}
-          >
-            <div
-              className="siderbar_section_title"
-              style={{
-                padding: "1.5rem",
-                textAlign: "left",
-                fontFamily: "var(--main-font)",
-              }}
-            >
-              {" "}
-              <div>Main</div>
-            </div>
-            <SubMenu
-                label="Dashboard"
-                icon={<HomeRoundedIcon />}
-                suffix={
-                  <Badge variant="info" shape="square">
-                    6
-                  </Badge>
-                }
-              >
-                <MenuItem> Pie charts</MenuItem>
-                <MenuItem> Line charts</MenuItem>
-                <MenuItem> Bar charts</MenuItem>
-              </SubMenu>
-            <MenuItem icon={<HomeRoundedIcon />}> Dashboard </MenuItem>
-            <MenuItem icon={<PeopleOutlinedIcon />}>Team</MenuItem>
-            <MenuItem icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
-            <MenuItem icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>
-            <MenuItem icon={<HelpOutlineOutlinedIcon />}>FAQ</MenuItem>
-            <MenuItem icon={<CalendarTodayOutlinedIcon />}>Calendar</MenuItem>
-          </Menu>
-        </Sidebar>
+        <div className="side_body_dashboard"> </div>
       </div>
     </div>
   );

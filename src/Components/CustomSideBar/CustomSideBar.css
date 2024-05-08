@@ -1,0 +1,25 @@
+
+.siderbar_container{
+    height: 100vh; 
+    display: flex;
+    width: 40%;
+  }
+  
+  .sidebar_container .css-dip3t8{
+    width: 350px;
+    background: var(--global-sidebar);
+  }
+  
+  .main_sidebar{
+  height:91.3vh;
+  width: 40%;
+  color: white
+  }
+  
+  .sidebar_section_title{
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--main-font);
+  } 
+
+    
