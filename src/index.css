@@ -1,7 +1,6 @@
 :root {
   font-family: "Plus Jakarta Sans", sans-serif;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,12 +17,17 @@
   --global-blue: #5E60CD
   --global-dark-blue: #343957;
   --global-grey: #898989;
+  --global-icon: #B0B3C2;
   --global-sidebar: #343957
 }
 
 body{
   margin: 0;
   padding: 0;
+}
+
+.css-dip3t8{
+  background-color:var(--global-sidebar);
 }
 
 
