@@ -17,7 +17,8 @@
   --global-purple: #8D4BFA;
   --global-blue: #5E60CD
   --global-dark-blue: #343957;
-  --global-grey: #898989
+  --global-grey: #898989;
+  --global-sidebar: #343957
 }
 
 body{
