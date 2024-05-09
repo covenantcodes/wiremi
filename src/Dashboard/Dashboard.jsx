@@ -12,6 +12,10 @@ import CustomButton from "../Components/CustomButton";
 import CustomSideBar from "../Components/CustomSideBar/CustomSideBar";
 import CountUp from "react-countup";
 import { useProSidebar } from "react-pro-sidebar";
+import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Dashboard = () => {
   const { collapseSidebar, isCollapsed } = useProSidebar();
@@ -24,6 +28,36 @@ const Dashboard = () => {
       collapseSidebar();
     }
     setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  const data = {
+    labels: [],
+    datasets: [
+      {
+        label: "KYC Request Status",
+        data: [84, 10, 25, 20],
+        backgroundColor: ["#27BC64", "#EE3A3A", "#E9BD2F", "#ECEDEF"],
+      },
+    ],
+  };
+
+  const options = {};
+
+  const textCenter = {
+    id: "textCenter",
+    beforeDatasetsDraw(chart) {
+      const { ctx, data } = chart;
+
+      ctx.save();
+      ctx.font = "bolder 40px sans-serif";
+      ctx.fillStyle = "black";
+      ctx.textAlign = "center";
+      ctx.fillText(
+        `${data.datasets[0].data[0]}%`,
+        chart.getDatasetMeta(0).data[0].x,
+        chart.getDatasetMeta(0).data[0].y
+      );
+    },
   };
 
   return (
@@ -378,11 +412,36 @@ const Dashboard = () => {
                 <div className="kyc_status_charts_header">Charts</div>
 
                 <div className="total_kyc_request_stats">
-                    <div className="total_kyc_request_label">
+                  <div className="total_kyc_request_label">
+                    <div>
                       Total KYC Request
-                      <br></br>
-                      <span><CountUp start={0} end={3000} duration={3} /></span>
+                      <br />
+                      <span>
+                        <CountUp start={0} end={3000} duration={3} />
+                      </span>
                     </div>
+                  </div>
+
+                  <div className="total_kyc_request_doughnut">
+                    <Doughnut
+                      data={data}
+                      options={options}
+                      plugins={[textCenter]}
+                    ></Doughnut>
+                  </div>
+                </div>
+
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">
+                      Total KYC Requested
+                    </div>{" "}
+                    <div className="status_line_header_count">500 People</div>
+                  </div>
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green"></div>
+                    <div className="status_line_progress_bar_gray"></div>
+                  </div>
                 </div>
               </div>
             </div>
