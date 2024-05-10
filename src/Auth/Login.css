@@ -36,7 +36,7 @@
 
 .login_box {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: .5rem 1.3rem;
+  padding: 0.5rem 1.3rem;
   width: 30%;
   border-radius: 1rem;
   background-color: #fff;
@@ -47,15 +47,15 @@
   justify-content: center;
   flex-direction: column;
   flex: 1;
-  height: 50%; 
+  height: 50%;
 }
 
-.login_input{
-padding-left: 3rem
+.login_input {
+  padding-left: 3rem;
 }
 
 .login_box-bg {
-  background-image: url("../../public/img/bg-login.png");
+  background-image: url("../../assets/img/bg-login.png");
   margin-left: -2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 2rem;
@@ -65,7 +65,7 @@ padding-left: 3rem
   z-index: 8;
   right: 15%;
   flex: 1.5;
-  height:60%; 
+  height: 60%;
 }
 
 .logo_img {
@@ -80,7 +80,6 @@ padding-left: 3rem
   text-align: center;
   padding-bottom: 2rem;
 }
-
 
 .login_extras {
   display: flex;

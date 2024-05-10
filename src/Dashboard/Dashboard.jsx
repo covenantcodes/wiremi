@@ -64,7 +64,7 @@ const Dashboard = () => {
     <div className="dashboard_main_container">
       <div className="header_container">
         <div className="logo_container">
-          <img src="../../public/img/logo.png" />
+          <img src="../../assets/img/logo.png" />
 
           <span>Wiremi</span>
         </div>
@@ -103,14 +103,14 @@ const Dashboard = () => {
             </div>
 
             <div className="actions_extras_container">
-              <img src="../../public/img/notification.png" />
-              <img src="../../public/img/email.png" />
+              <img src="../../assets/img/notification.png" />
+              <img src="../../assets/img/email.png" />
             </div>
 
             <div className="profile_header_container">
               <div className="profile_pic_container">
                 <img
-                  src="../../public/img/profile.png"
+                  src="../../assets/img/profile.png"
                   className="profile_pic"
                 />
               </div>
@@ -136,7 +136,7 @@ const Dashboard = () => {
           <div className="body_header">
             <div className="body_heading_dashboard">
               <img
-                src="../../public/img/waving.png"
+                src="../../assets/img/waving.png"
                 className="heading_wave_img"
               />
               <div className="body_heading_text">
@@ -153,7 +153,7 @@ const Dashboard = () => {
                   <div style={{ display: "flex", width: "100%" }}>
                     {" "}
                     <img
-                      src="../../public/img/caution.png"
+                      src="../../assets/img/caution.png"
                       className="dashboard_warning_image"
                     />
                     <div className="dashboard_warning_text">
@@ -196,7 +196,7 @@ const Dashboard = () => {
                 <div className="stats_header">
                   Total Downloads
                   <img
-                    src="../../public/img/download.png"
+                    src="../../assets/img/download.png"
                     className="stats_img"
                   />
                 </div>
@@ -222,7 +222,7 @@ const Dashboard = () => {
                 <div className="stats_header">
                   Total Verified Users
                   <img
-                    src="../../public/img/verified.png"
+                    src="../../assets/img/verified.png"
                     className="stats_img"
                   />
                 </div>
@@ -248,7 +248,7 @@ const Dashboard = () => {
                 <div className="stats_header">
                   Total Agents
                   <img
-                    src="../../public/img/agents.png"
+                    src="../../assets/img/agents.png"
                     className="stats_img"
                   />
                 </div>
@@ -274,7 +274,7 @@ const Dashboard = () => {
                 <div className="stats_header">
                   Total Organization
                   <img
-                    src="../../public/img/organization.png"
+                    src="../../assets/img/organization.png"
                     className="stats_img"
                   />
                 </div>
