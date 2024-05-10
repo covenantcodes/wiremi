@@ -1,19 +1,16 @@
 
-.siderbar_container{
-    height: 100vh; 
+.sidebar_container{
     display: flex;
-    width: 40%;
   }
   
   .sidebar_container .css-dip3t8{
-    width: 350px;
+    width: 100%;
     background: var(--global-sidebar);
   }
   
   .main_sidebar{
-    height: 110vh;
-  width: 40%;
-  color: white
+    height: 130vh;
+    color: white
   }
   
   .sidebar_section_title{

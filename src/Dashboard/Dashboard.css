@@ -1,5 +1,4 @@
 .dashboard_main_container {
-  
 }
 
 .header_container {
@@ -135,9 +134,7 @@
 }
 
 .side_body_dashboard {
-  width: 83%;
   padding: 2rem;
-  margin-left: 5.3%;
 }
 
 .body_heading_dashboard {
@@ -245,7 +242,7 @@
 
 .kyc_status_main {
   display: flex;
-  
+
   justify-content: space-between;
 }
 
@@ -303,10 +300,11 @@ td {
 }
 
 .kyc_status_charts_container {
-    padding: 2rem;
-    margin-top: 1rem; 
-   width: 45%;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem;
+  margin-top: 1rem;
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .kyc_status_charts_header {
@@ -335,47 +333,57 @@ td {
   padding: 1rem;
 }
 
-
 .dataChart.second-chart {
   width: 43%;
 }
 
 .total_kyc_request_doughnut canvas {
-  height: 300px; 
-  width: 300px; 
+  height: 300px;
+  width: 300px;
   border-width: 10px;
 }
 
-.status_line_header_container{
+.status_line_header_container {
+  padding-top: 1.5rem;
+
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  color: #9BA0AA
+  color: #9ba0aa;
 }
 
-.status_line_header{
-  font-weight:600;
-  color: #9BA0AA
+.status_line_header {
+  font-weight: 600;
+  color: #9ba0aa;
 }
 
 .status_line_progress {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   position: relative;
-  width: 100%; 
-  height: 10px; 
+  width: 100%;
+  height: 10px;
 }
 
 .status_line_progress_indicator_green {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%; 
+  width: 45%;
   height: 100%;
-  background-color: green; 
+  background-color: #2fe784;
+}
+
+.red {
+  width: 30%;
+  background-color: #ff0000;
+}
+.yellow {
+  width: 30%;
+  background-color: #ffcc00;
 }
 
 .status_line_progress_bar_gray {
   width: 100%;
   height: 100%;
-  background-color: #F2F2F2; 
+  background-color: #f2f2f2;
 }

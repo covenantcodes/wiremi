@@ -442,9 +442,43 @@ const Dashboard = () => {
                     <div className="status_line_progress_indicator_green"></div>
                     <div className="status_line_progress_bar_gray"></div>
                   </div>
+
+                  
+                </div>
+
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">
+                      Total KYC Rejected
+                    </div>{" "}
+                    <div className="status_line_header_count">500 People</div>
+                  </div>
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green red"></div>
+                    <div className="status_line_progress_bar_gray"></div>
+                  </div>
+
+                  
+                </div>
+
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">
+                      Total KYC Pending
+                    </div>{" "}
+                    <div className="status_line_header_count">500 People</div>
+                  </div>
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green yellow"></div>
+                    <div className="status_line_progress_bar_gray"></div>
+                  </div>
+
+                  
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
       </div>
