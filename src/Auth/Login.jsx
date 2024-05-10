@@ -40,7 +40,7 @@ const Login = () => {
               icon={
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  fontSize={29}
+                  fontSize={20}
                   color="#898989"
                 />
               }
@@ -50,7 +50,7 @@ const Login = () => {
 
             <CustomInput
               icon={
-                <FontAwesomeIcon icon={faKey} fontSize={29} color="#898989" />
+                <FontAwesomeIcon icon={faKey} fontSize={20} color="#898989" />
               }
               placeholder="Input your Password"
               type="password"

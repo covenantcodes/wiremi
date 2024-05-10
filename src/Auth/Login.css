@@ -36,7 +36,7 @@
 
 .login_box {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 2rem;
+  padding: .5rem 1.3rem;
   width: 30%;
   border-radius: 1rem;
   background-color: #fff;
@@ -47,7 +47,11 @@
   justify-content: center;
   flex-direction: column;
   flex: 1;
-  height: 65%; 
+  height: 50%; 
+}
+
+.login_input{
+padding-left: 3rem
 }
 
 .login_box-bg {
@@ -61,7 +65,7 @@
   z-index: 8;
   right: 15%;
   flex: 1.5;
-  height: 75%; 
+  height:60%; 
 }
 
 .logo_img {
@@ -82,9 +86,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 4rem;
-  padding-left: 2rem;
-  padding-top: 4rem;
+  padding: 2rem 3.5rem;
+  font-size: 14px;
 }
 
 .checkbox-wrapper-1 *,
@@ -199,7 +202,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0rem 2rem;
+  padding: 1rem 0rem 2rem;
 }
 
 .custom-animation {
