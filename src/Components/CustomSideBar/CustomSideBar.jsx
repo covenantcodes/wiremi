@@ -45,9 +45,9 @@ const CustomSideBar = () => {
               color: "var(--global-icon)",
             },
             label: () => ({
-              fontWeight: 350,
+              fontWeight: 300,
               fontFamily: "var(--main-font)",
-              fontSize: "19px",
+              fontSize: "13px",
             }),
 
             button: {
@@ -139,7 +139,7 @@ const CustomSideBar = () => {
             <LockRoundedIcon
               style={{
                 position: "absolute",
-                width: "68%",
+                width: "65%",
               }}
             />
           </MenuItem>

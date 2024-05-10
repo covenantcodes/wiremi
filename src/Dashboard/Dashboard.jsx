@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+// import { faBell } from "@fortawesome/free-regular-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import CustomButton from "../Components/CustomButton";
@@ -49,7 +49,7 @@ const Dashboard = () => {
       const { ctx, data } = chart;
 
       ctx.save();
-      ctx.font = "bolder 40px sans-serif";
+      ctx.font = "bolder 20px sans-serif";
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
       ctx.fillText(
@@ -73,7 +73,7 @@ const Dashboard = () => {
           <div className="side_bar_menu_icon" onClick={handleToggleSidebar}>
             <FontAwesomeIcon
               icon={faBars}
-              fontSize={25}
+              fontSize={20}
               color="var(--global-grey)"
             />
           </div>
@@ -81,7 +81,7 @@ const Dashboard = () => {
           <div className="actions_container">
             <CustomButton
               backgroundColor="var(--primary-color)"
-              width={200}
+              width={170}
               borderRadius={6}
             >
               View as Client
@@ -103,12 +103,8 @@ const Dashboard = () => {
             </div>
 
             <div className="actions_extras_container">
-              <FontAwesomeIcon icon={faBell} fontSize={29} color="#898989" />
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                fontSize={29}
-                color="#898989"
-              />
+              <img src="../../public/img/notification.png" />
+              <img src="../../public/img/email.png" />
             </div>
 
             <div className="profile_header_container">
@@ -125,7 +121,7 @@ const Dashboard = () => {
                   <FontAwesomeIcon
                     icon={faChevronDown}
                     color="var(--global-grey)"
-                    fontSize={16}
+                    fontSize={12}
                   />
                 </div>
               </div>
@@ -154,7 +150,7 @@ const Dashboard = () => {
             <div className="dashboard_warning_container">
               <div className="dashboard_warning_box">
                 <div className="dashboard_warning_info_container">
-                  <div style={{ display: "flex" }}>
+                  <div style={{ display: "flex", width: "100%" }}>
                     {" "}
                     <img
                       src="../../public/img/caution.png"
@@ -171,7 +167,11 @@ const Dashboard = () => {
                   </div>
 
                   <div className="dashboard_warning_info_actions">
-                    <CustomButton backgroundColor="var(--global-purple)">
+                    <CustomButton
+                      backgroundColor="var(--global-purple)"
+                      width={90}
+                      fontSize={13}
+                    >
                       Proceed
                     </CustomButton>
                     <div style={{ paddingLeft: "1rem" }}>
@@ -180,6 +180,8 @@ const Dashboard = () => {
                         color="#848484"
                         borderWidth="2px"
                         borderColor="#848484"
+                        width={80}
+                        fontSize={13}
                       >
                         Cancel
                       </CustomButton>
