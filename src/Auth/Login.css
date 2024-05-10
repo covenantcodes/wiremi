@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 46%; /* Set the height to 100% to fill the parent container */
+  height: 55%; 
 }
 
 .login_box-bg {
@@ -60,7 +60,7 @@
   z-index: 8;
   right: 15%;
   flex: 1.5;
-  height: 55%; /* Set the height to 120% to make it taller than the login box */
+  height: 65%; 
 }
 
 .logo_img {
