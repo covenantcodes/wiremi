@@ -8,7 +8,7 @@ import { faKey } from "@fortawesome/free-solid-svg-icons";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../Components/CustomInput";
 import { useNavigate } from "react-router-dom";
-import loadingData from "../../img/loading.json";
+import loadingData from "../../public/img/loading.json";
 
 const Login = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
@@ -30,7 +30,7 @@ const Login = () => {
       {/* LOGIN FORM */}
       <div className="login_container">
         <div className="login_box-bg">
-          <img src="../../img/logo.png" className="logo_img" />
+          <img src="../../public/img/logo.png" className="logo_img" />
         </div>
         <div className="login_box">
           <div className="login_title">Login</div>

@@ -45,26 +45,28 @@
   left: 20%;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  height: 46%; /* Set the height to 100% to fill the parent container */
 }
 
 .login_box-bg {
-  background-image: url("../../img/bg-login.png");
+  background-image: url("../../public/img/bg-login.png");
   margin-left: -2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 2rem;
   width: 30%;
   border-radius: 1rem;
-  height: 65vh;
   position: absolute;
   z-index: 8;
   right: 15%;
+  flex: 1.5;
+  height: 55%; /* Set the height to 120% to make it taller than the login box */
 }
 
-.logo_img{
+.logo_img {
   position: absolute;
   bottom: 15px;
   right: 10px;
-
 }
 
 .login_title {
@@ -77,7 +79,7 @@
 .login_input {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   padding-top: 1.5rem;
 }
 
@@ -226,12 +228,12 @@
   color: rgba(0, 0, 0, 0.275);
 }
 
-.login_forgot{
-  cursor: pointer
+.login_forgot {
+  cursor: pointer;
 }
 
-.login_forgot:hover{
-    color: var(--sub-primary-color)
+.login_forgot:hover {
+  color: var(--sub-primary-color);
 }
 
 .login_button {
@@ -241,10 +243,9 @@
   padding: 3rem 0rem 2rem;
 }
 
-.custom-animation{
+.custom-animation {
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-

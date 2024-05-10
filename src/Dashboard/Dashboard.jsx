@@ -64,7 +64,7 @@ const Dashboard = () => {
     <div className="dashboard_main_container">
       <div className="header_container">
         <div className="logo_container">
-          <img src="../../img/logo.png" />
+          <img src="../../public/img/logo.png" />
 
           <span>Wiremi</span>
         </div>
@@ -113,7 +113,10 @@ const Dashboard = () => {
 
             <div className="profile_header_container">
               <div className="profile_pic_container">
-                <img src="../../img/profile.png" className="profile_pic" />
+                <img
+                  src="../../public/img/profile.png"
+                  className="profile_pic"
+                />
               </div>
 
               <div className="profile_name">
@@ -136,7 +139,10 @@ const Dashboard = () => {
         <div className="side_body_dashboard">
           <div className="body_header">
             <div className="body_heading_dashboard">
-              <img src="../../img/waving.png" className="heading_wave_img" />
+              <img
+                src="../../public/img/waving.png"
+                className="heading_wave_img"
+              />
               <div className="body_heading_text">
                 Welcome, Brie Larson
                 <div className="body_subheading_text">
@@ -151,7 +157,7 @@ const Dashboard = () => {
                   <div style={{ display: "flex" }}>
                     {" "}
                     <img
-                      src="../../img/caution.png"
+                      src="../../public/img/caution.png"
                       className="dashboard_warning_image"
                     />
                     <div className="dashboard_warning_text">
@@ -187,7 +193,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Downloads
-                  <img src="../../img/download.png" className="stats_img" />
+                  <img
+                    src="../../public/img/download.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -210,7 +219,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Verified Users
-                  <img src="../../img/verified.png" className="stats_img" />
+                  <img
+                    src="../../public/img/verified.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -233,7 +245,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Agents
-                  <img src="../../img/agents.png" className="stats_img" />
+                  <img
+                    src="../../public/img/agents.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -256,7 +271,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Organization
-                  <img src="../../img/organization.png" className="stats_img" />
+                  <img
+                    src="../../public/img/organization.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -442,43 +460,31 @@ const Dashboard = () => {
                     <div className="status_line_progress_indicator_green"></div>
                     <div className="status_line_progress_bar_gray"></div>
                   </div>
-
-                  
                 </div>
 
                 <div className="status_line_container">
                   <div className="status_line_header_container">
-                    <div className="status_line_header">
-                      Total KYC Rejected
-                    </div>{" "}
+                    <div className="status_line_header">Total KYC Rejected</div>{" "}
                     <div className="status_line_header_count">500 People</div>
                   </div>
                   <div className="status_line_progress">
                     <div className="status_line_progress_indicator_green red"></div>
                     <div className="status_line_progress_bar_gray"></div>
                   </div>
-
-                  
                 </div>
 
                 <div className="status_line_container">
                   <div className="status_line_header_container">
-                    <div className="status_line_header">
-                      Total KYC Pending
-                    </div>{" "}
+                    <div className="status_line_header">Total KYC Pending</div>{" "}
                     <div className="status_line_header_count">500 People</div>
                   </div>
                   <div className="status_line_progress">
                     <div className="status_line_progress_indicator_green yellow"></div>
                     <div className="status_line_progress_bar_gray"></div>
                   </div>
-
-                  
                 </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
