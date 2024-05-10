@@ -76,48 +76,6 @@
   padding-bottom: 2rem;
 }
 
-.login_input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1.5rem;
-}
-
-.login_input_container {
-  position: relative;
-  margin-top: 20px;
-}
-
-.login_input_bottom {
-  position: relative;
-  padding: 1.2rem;
-  background-color: white;
-  margin-left: 5px;
-  border-radius: 10px;
-  border-left: 6px solid var(--sub-primary-color);
-  width: 87%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.login_input_bottom_main {
-  display: flex;
-}
-
-.login_input_icon_container {
-  padding-right: 20px;
-  border-right: 3px solid var(--global-grey);
-}
-
-.input_container {
-  margin-left: 15px;
-  background-color: #fff;
-  outline: none;
-  border: none;
-  font-family: var(--main-font);
-  font-size: 20px;
-  color: var(--global-grey);
-  width: 400px;
-}
 
 .login_extras {
   display: flex;

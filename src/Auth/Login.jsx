@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
-import CustomInput from "../Components/CustomInput";
+import CustomInput from "../Components/CustomInput/CustomInput";
 import { useNavigate } from "react-router-dom";
 import loadingData from "../../public/img/loading.json";
 

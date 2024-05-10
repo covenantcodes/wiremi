@@ -1,5 +1,5 @@
 .dashboard_main_container {
-  
+
 }
 
 .header_container {
@@ -136,6 +136,8 @@
 
 .side_body_dashboard {
   padding: 2rem;
+  width: 80%
+
 }
 
 .body_heading_dashboard {

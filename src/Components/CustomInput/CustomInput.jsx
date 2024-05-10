@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
-import "../Auth/Login.css"
+import "./CustomInput.css"
 
 const CustomInput = ({ icon, placeholder, type, ...rest }) => {
   return (
-    <div className="login_input_container">
-    <div className="login_input_bottom">
-      <div className="login_input_bottom_main">
-        <div className="login_input_icon_container">
+    <div className="custom_input_container">
+    <div className="custom_input_bottom">
+        <div className="custom_input_icon_container">
           {icon}
         </div>
         <input placeholder={placeholder} type={type} {...rest} className="input_container" />
-      </div>
     </div>
   </div>
   );
