@@ -30,7 +30,7 @@ const Login = () => {
       {/* LOGIN FORM */}
       <div className="login_container">
         <div className="login_box-bg">
-          <img src="../../assets/img/logo.png" className="logo_img" />
+          <img src="../../src/assets/img/logo.png" className="logo_img" />
         </div>
         <div className="login_box">
           <div className="login_title">Login</div>
