@@ -1,5 +1,4 @@
 .dashboard_main_container {
-
 }
 
 .header_container {
@@ -17,7 +16,7 @@
   color: black;
 }
 
-.logo_container img{
+.logo_container img {
   width: 30%;
 }
 
@@ -132,7 +131,7 @@
 }
 
 .dropdown_container {
-  padding-left:.5rem;
+  padding-left: 0.5rem;
 }
 
 .main_body_dashboard {
@@ -143,7 +142,7 @@
 .side_body_dashboard {
   padding: 2rem;
   width: 80%;
-  margin-left: 3.4rem
+  margin-left: 3.4rem;
 }
 
 .body_heading_dashboard {
@@ -265,6 +264,14 @@
 .kyc_status_container_table {
   border-radius: 2rem;
 }
+.kyc_status_container_table_two {
+  padding: 2rem 0rem;
+  width: 100%;
+}
+
+.kyc_status_table_two_tr {
+  border-bottom: 2px solid #D1D3D4;
+}
 
 table {
   width: 60%;
@@ -285,7 +292,7 @@ th {
   padding: 0.5rem;
   color: #ffffff;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 th:first-child {
   border-top-left-radius: 13px;
@@ -309,8 +316,7 @@ td {
   color: #9ba0aa;
   padding: 1rem;
   font-weight: 400;
-  font-size: .8rem;
-
+  font-size: 0.8rem;
 }
 
 .kyc_status_charts_container {
@@ -348,7 +354,6 @@ td {
 }
 
 .dataChart.second-chart {
-
 }
 
 .total_kyc_request_doughnut canvas {
@@ -366,13 +371,13 @@ td {
 }
 
 .status_line_header {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #9ba0aa;
 }
 
 .status_line_header_count {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .status_line_progress {

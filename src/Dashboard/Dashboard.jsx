@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-// import { faBell } from "@fortawesome/free-regular-svg-icons";
-// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
+import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import CustomButton from "../Components/CustomButton";
@@ -109,7 +109,10 @@ const Dashboard = () => {
 
             <div className="profile_header_container">
               <div className="profile_pic_container">
-                <img src="../../src/assets/img/profile.png" className="profile_pic" />
+                <img
+                  src="../../src/assets/img/profile.png"
+                  className="profile_pic"
+                />
               </div>
 
               <div className="profile_name">
@@ -192,7 +195,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Downloads
-                  <img src="../../src/assets/img/download.png" className="stats_img" />
+                  <img
+                    src="../../src/assets/img/download.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -215,7 +221,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Verified Users
-                  <img src="../../src/assets/img/verified.png" className="stats_img" />
+                  <img
+                    src="../../src/assets/img/verified.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -238,7 +247,10 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Agents
-                  <img src="../../src/assets/img/agents.png" className="stats_img" />
+                  <img
+                    src="../../src/assets/img/agents.png"
+                    className="stats_img"
+                  />
                 </div>
 
                 <div className="stats_count">
@@ -412,6 +424,56 @@ const Dashboard = () => {
                         <td>View</td>
                       </tr>
                     </tbody>
+                  </table>
+                </div>
+
+                <div className="kyc_status_container_table_two">
+                  <table style={{ width: "100%", borderRadius: "13px" }}>
+                    <tr className="kyc_status_table_two_tr">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
+                    <tr className="kyc_status_table_two_tr">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
+                    <tr className="">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
                   </table>
                 </div>
               </div>
