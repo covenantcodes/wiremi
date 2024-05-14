@@ -20,7 +20,7 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import LockRoundedIcon from "@mui/icons-material/LockRounded";
-
+import { Link } from "react-router-dom";
 
 
 const CustomSideBar = () => {
@@ -84,14 +84,16 @@ const CustomSideBar = () => {
                 6
               </Badge>
             }
+            component={<Link to="/Dashboard" className="link" />}
           >
             <MenuItem> Pie charts</MenuItem>
             <MenuItem> Line charts</MenuItem>
             <MenuItem> Bar charts</MenuItem>
           </SubMenu>
           <MenuItem icon={<PersonRoundedIcon />}> Customers Area </MenuItem>
-          <MenuItem icon={<SupportAgentRoundedIcon />}>
+          <MenuItem icon={<SupportAgentRoundedIcon />} component={<Link to="/CustomerSupport" className="link" />}>
             Customer Support
+           
             <LockRoundedIcon
               style={{
                 position: "absolute",
