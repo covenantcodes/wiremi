@@ -1,229 +1,287 @@
-.main_customer_body{
-    display: flex;
+.main_customer_body {
+  display: flex;
 }
 
-.customer_support_body{
-    padding: 1rem;
-    width: 83%;
-}
-
-.customer_support_body_title{
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.customer_support_stats_box{
-    width: 100%;
-    padding: 1rem 0rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.customer_support_stats{
-    width: 17%;
-    padding: 1rem .8rem;
-    background-color: white;
-    font-size: .8rem;
-    color: #0379E7;
-    font-weight: bold;
-    border-radius: 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
-}
-
-.customer_support_stats_cta{
-    display: flex;
-    align-items: center;
-}
-
-.customer_support_stats_bottom{
-    display: flex;
-}
-.current_month{
-    color: black;
-    font-weight: 900;
-    padding: .6rem;
-    
-}
-
-.ticket_current_month{
-    font-size: .7rem;
-    color: lightgrey;
-    font-weight: 500;
-    padding: .1rem 0rem;
-
-}
-
-.views_main_container{
-}
-.views_main_box{
-    padding: 1rem;
-}
-
-.views_header_box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.views_header_title{
-    font-weight: 800;
-}
-
-.views_header_icon{
-    font-size: .7rem;
-    font-weight: 700;
-    color: "#4A627A"
-}
-
-.views_actions_container_box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.views_actions_box{
-    border: 1px solid #E9F1FE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: #FBFCFF;
-}
-
-.views_actions_icon img{
-    padding-bottom: 1rem;
-    width: 40%;
-}
-
-.chat_notification_main_container{
-    display: flex;
-}
-
-.notification_container{
-    padding: 1rem;
-    width: 50%;
-}
-
-.notification_header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-}
-
-.notification_item_all_container{
-    padding: 1rem ;
-    background-color: #F9FAFD;
-    border-radius: 25px;
-}
-
-
-.notification_item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid EAF2FF;
-
-}
-
-.notification_badge{
-    width: 10%;
-    padding: .5rem;
-}
-
-.notification_badge_icon{   
+.customer_support_body {
   padding: 1rem;
-  background-color: #FFE3E5;
+  width: 83%;
+}
+
+.customer_support_body_title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.customer_support_stats_box {
+  width: 100%;
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customer_support_stats {
+  width: 17%;
+  padding: 1rem 0.8rem;
+  background-color: white;
+  font-size: 0.8rem;
+  color: #0379e7;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.customer_support_stats_cta {
+  display: flex;
+  align-items: center;
+}
+
+.customer_support_stats_bottom {
+  display: flex;
+}
+.current_month {
+  color: black;
+  font-weight: 900;
+  padding: 0.6rem;
+}
+
+.ticket_current_month {
+  font-size: 0.7rem;
+  color: lightgrey;
+  font-weight: 500;
+  padding: 0.1rem 0rem;
+}
+
+.views_main_container {
+}
+.views_main_box {
+  padding: 1rem;
+}
+
+.views_header_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.views_header_title {
+  font-weight: 800;
+}
+
+.views_header_icon {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: "#4A627A";
+}
+
+.views_actions_container_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.views_actions_box {
+  border: 1px solid #e9f1fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #fbfcff;
+}
+
+.views_actions_icon img {
+  padding-bottom: 1rem;
+  width: 40%;
+}
+
+.chat_notification_main_container {
+  display: flex;
+}
+
+.notification_container {
+  padding: 1rem;
+  width: 50%;
+}
+
+.notification_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.notification_item_all_container {
+  padding: 1rem;
+  background-color: #f9fafd;
+  border-radius: 25px;
+}
+
+.notification_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid EAF2FF;
+}
+
+.notification_badge {
+  width: 10%;
+  padding: 0.5rem;
+}
+
+.notification_badge_icon {
+  padding: 1rem;
+  background-color: #ffe3e5;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F12C2D
+  color: #f12c2d;
 }
 
-.img_version{
-   background: none;
+.img_version {
+  background: none;
+}
+
+.notification_badge_icon img {
+  width: 220%;
+}
+
+.notification_item_main {
+  padding: 1rem;
+  width: 64%;
+}
+
+.notification_item_body {
+  font-weight: 700;
+}
+
+.notification_item_body span {
+  color: #0379e7;
+}
+
+.notification_item_sub {
+  color: #9ba0aa;
+  font-weight: 300;
+  font-size: 12px;
+  padding-top: 0.3rem;
+}
+
+.notification_item_cta {
+  color: #0379e7;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live_chat_main_container {
+  padding: 1rem;
+  width: 50%;
+  background-color: #f9fafd;
+  border-radius: 1rem;
+}
+
+.live_chat_box {
+}
+
+.live_chat_header_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.live_chat_header {
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.live_chat_header_actions {
+  width: 10%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.received_chat {
+  padding: 1rem;
+  max-width: 40%;
+  display: flex;
+}
+
+.live_chat_side {
+  width: 15%;
+}
+
+.live_chat_profile {
+  width: 100%;
+}
+
+.live_chat_profile img {
+  width: 100%;
+}
+
+.live_chat_time {
+  font-size: 0.6rem;
+  color: var(--global-grey);
+}
+
+.received_chat_bubble {
+  border-radius: 0.5rem;
+  background-color: #f2f1f7;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.received_chat_name {
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.received_chat_message {
+  font-size: 0.9rem;
+}
+
+.main_message_box {
+  display: flex;
+  max-width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sent_chat {
+  padding: 1rem;
+  max-width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sent_img {
+  width: 120%;
+}
+
+.sent_bubble{
+    background-color: #D8F2F3;
 
 }
 
-.notification_badge_icon img{
-    width: 220%;
-
-}
-
-.notification_item_main{
-    padding: 1rem;
-    width: 64%;
-}
-
-.notification_item_body{
-    font-weight: 700;
-}
-
-.notification_item_body span{
-    color:#0379E7
-}
-
-.notification_item_sub{
-    color: #9BA0AA;
-    font-weight: 300;
-    font-size: 12px;
-    padding-top: .3rem;
-}
-
-.notification_item_cta{
-    color: #0379E7;
-    font-size: .9rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.live_chat_main_container{
+.live_chat_input{
     border: 1px solid red;
     padding: 1rem;
-    width: 50%;
-    
-}
-
-
-.live_chat_box{
-    border: 1px solid red;
-
-}
-
-.live_chat_header_box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.live_chat_header{
-    font-weight: 700;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.live_chat_header_actions{
-    border: 1px solid red;
-    width: 10%;
-    padding: 1rem;
-    display: flex ;
-    align-items: center;
-    justify-content: space-between;
 }

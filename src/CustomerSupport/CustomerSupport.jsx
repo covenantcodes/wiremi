@@ -11,6 +11,7 @@ import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import "react-circular-progressbar/dist/styles.css";
 import CustomButton from "../Components/CustomButton";
+import CustomInput from "../Components/CustomInput/CustomInput";
 import PhoneMissedIcon from "@mui/icons-material/PhoneMissed";
 
 const CustomerSupport = () => {
@@ -293,7 +294,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../src/assets/img/callbadge.png" />
+                      <img src="../../src/assets/img/phone.png" />
                     </div>
                     Make a call
                   </div>
@@ -311,7 +312,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../src/assets/img/not_badge.png" />
+                      <img src="../../src/assets/img/compose.png" />
                     </div>
                     Compose Notification
                   </div>
@@ -331,7 +332,7 @@ const CustomerSupport = () => {
                     <div className="views_actions_icon">
                       <img src="../../src/assets/img/megaphone.png" />
                     </div>
-                   Add Contact
+                    Add Contact
                   </div>
                 </div>
               </div>
@@ -533,6 +534,79 @@ const CustomerSupport = () => {
                     <FontAwesomeIcon icon={faRotate} />
                     <FontAwesomeIcon icon={faMinus} />
                     <FontAwesomeIcon icon={faXmark} />
+                  </div>
+                </div>
+
+                <div className="live_chat_body">
+                  <div className="received_chat">
+                    <div className="live_chat_side">
+                      <div className="live_chat_profile">
+                        <img src="../../src/assets/img/jane.png" />
+                      </div>
+                      <div className="live_chat_time">10:01</div>
+                    </div>
+                    <div className="received_chat_bubble">
+                      <div className="received_chat_name">Geneva</div>
+
+                      <div className="received_chat_message">Hello Thomas</div>
+                    </div>
+                  </div>
+
+                  <div className="main_message_box">
+                    <div className="sent_chat">
+                      <div className="live_chat_side">
+                        <div className="live_chat_profile sent_img">
+                          <img src="../../src/assets/img/jane.png" />
+                        </div>
+                        <div className="live_chat_time">10:04</div>
+                      </div>
+                      <div className="received_chat_bubble sent_bubble">
+                        <div className="received_chat_name">Thomas</div>
+
+                        <div className="received_chat_message">
+                          Hello Geneva, How are you today?
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="received_chat">
+                    <div className="live_chat_side">
+                      <div className="live_chat_profile">
+                        <img src="../../src/assets/img/jane.png" />
+                      </div>
+                      <div className="live_chat_time">10:01</div>
+                    </div>
+                    <div className="received_chat_bubble">
+                      <div className="received_chat_name">Geneva</div>
+
+                      <div className="received_chat_message">Im okay what about you</div>
+                    </div>
+                  </div>
+
+                  <div className="main_message_box">
+                    <div className="sent_chat">
+                      <div className="live_chat_side">
+                        <div className="live_chat_profile sent_img">
+                          <img src="../../src/assets/img/jane.png" />
+                        </div>
+                        <div className="live_chat_time">10:04</div>
+                      </div>
+                      <div className="received_chat_bubble sent_bubble">
+                        <div className="received_chat_name">Thomas</div>
+
+                        <div className="received_chat_message">
+                          I am stressed tbh
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="live_chat_input"> 
+                      <CustomInput
+
+                      />
                   </div>
                 </div>
               </div>
