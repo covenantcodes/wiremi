@@ -1,4 +1,4 @@
-import "./CustomSideBar.css"
+import "./CustomSideBar.css";
 import Badge from "../Badge";
 import {
   Sidebar,
@@ -21,7 +21,6 @@ import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import LockRoundedIcon from "@mui/icons-material/LockRounded";
 import { Link } from "react-router-dom";
-
 
 const CustomSideBar = () => {
   // const { collapseSidebar, isCollapsed } = useProSidebar();
@@ -90,10 +89,18 @@ const CustomSideBar = () => {
             <MenuItem> Line charts</MenuItem>
             <MenuItem> Bar charts</MenuItem>
           </SubMenu>
-          <MenuItem icon={<PersonRoundedIcon />}> Customers Area </MenuItem>
-          <MenuItem icon={<SupportAgentRoundedIcon />} component={<Link to="/CustomerSupport" className="link" />}>
+          <MenuItem
+            icon={<PersonRoundedIcon />}
+            component={<Link to="/ClientArea" className="link" />}
+          >
+            {" "}
+            Customers Area{" "}
+          </MenuItem>
+          <MenuItem
+            icon={<SupportAgentRoundedIcon />}
+            component={<Link to="/CustomerSupport" className="link" />}
+          >
             Customer Support
-           
             <LockRoundedIcon
               style={{
                 position: "absolute",

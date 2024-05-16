@@ -276,12 +276,22 @@
   width: 120%;
 }
 
-.sent_bubble{
-    background-color: #D8F2F3;
-
+.sent_bubble {
+  background-color: #d8f2f3;
 }
 
-.live_chat_input{
-    border: 1px solid red;
-    padding: 1rem;
+.live_chat_input_container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.live_chat_input {
+  background: none;
+  border: 1px solid #d1d3d4;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 6px;
+  color: #000;
+  outline: none;
 }

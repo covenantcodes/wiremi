@@ -11,7 +11,6 @@ import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import "react-circular-progressbar/dist/styles.css";
 import CustomButton from "../Components/CustomButton";
-import CustomInput from "../Components/CustomInput/CustomInput";
 import PhoneMissedIcon from "@mui/icons-material/PhoneMissed";
 
 const CustomerSupport = () => {
@@ -19,7 +18,6 @@ const CustomerSupport = () => {
   const valueChat = 144;
   const valueTransfer = 12;
   const valueTask = 2;
-  // const valueOverdue = 22;
 
   return (
     <div>
@@ -580,7 +578,9 @@ const CustomerSupport = () => {
                     <div className="received_chat_bubble">
                       <div className="received_chat_name">Geneva</div>
 
-                      <div className="received_chat_message">Im okay what about you</div>
+                      <div className="received_chat_message">
+                        Im okay what about you
+                      </div>
                     </div>
                   </div>
 
@@ -602,11 +602,19 @@ const CustomerSupport = () => {
                     </div>
                   </div>
 
+                  <div className="live_chat_input_container">
+                    <input
+                      placeholder="Type a message"
+                      className="live_chat_input"
+                    />
 
-                  <div className="live_chat_input"> 
-                      <CustomInput
-
-                      />
+                    <CustomButton
+                      width={40}
+                      fontSize={12}
+                      backgroundColor={"#CF3438"}
+                    >
+                      Send
+                    </CustomButton>
                   </div>
                 </div>
               </div>

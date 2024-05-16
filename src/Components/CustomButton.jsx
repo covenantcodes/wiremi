@@ -17,6 +17,7 @@ const CustomButton = ({
     borderWidth,
     borderColor,
     onClick,
+    marginLeft,
     ...rest
 }) => {
     const buttonStyle = {
@@ -36,6 +37,7 @@ const CustomButton = ({
         borderColor: borderColor,
         borderStyle: 'solid', // Adding border style
         transition: 'transform 0.3s',
+        marginLeft: marginLeft,
         ...(hoverColor && {'&:hover': {backgroundColor: hoverColor}}),
         ...(hoverTransformScale && {'&:hover': {transform: `scale(${hoverTransformScale})`}})
     };
@@ -68,6 +70,7 @@ CustomButton.propTypes = {
     width: PropTypes.string,
     borderWidth: PropTypes.string,
     borderColor: PropTypes.string, 
+    marginLeft: PropTypes.string,
     onClick: PropTypes.func
 };
   
@@ -83,6 +86,7 @@ CustomButton.defaultProps = {
     iconSpacing: '0.5rem',
     borderWidth: '0px', 
     borderColor: '#000000', 
+    marginLeft: "0px"
 };
   
 export default CustomButton;
