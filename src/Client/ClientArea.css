@@ -87,16 +87,15 @@
 .client_area_pagination_nav{
   display: flex;
   align-items: center;
-  border: 1px solid #5A5A5A;
+  border: 1px solid #898989;
   border-radius: 4px;
 }
 
 .client_area_pagination_nav_btn{
-  padding: .5rem;
-  background-color: #F6F6F6;
+  padding: .5rem .8rem;
   color: #5A5A5A;
 }
 
 .client_area_pagination_nav_btn:not(:first-child){
-  border-left: 1px solid #5A5A5A;
+  border-left: 1px solid #898989;
 }

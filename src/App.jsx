@@ -4,6 +4,7 @@ import Login from "./Auth/Login";
 import Dashboard from "./Dashboard/Dashboard";
 import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import ClientArea from "./Client/ClientArea";
+import Kyc from "./KYC/Kyc";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="Dashboard" element={<Dashboard />} />
       <Route path="/CustomerSupport" element={<CustomerSupport />} />
       <Route path="/ClientArea" element={<ClientArea />} />
+      <Route path="/Kyc" element={<Kyc />} />
     </Routes>
   );
 };

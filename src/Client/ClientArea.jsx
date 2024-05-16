@@ -26,7 +26,7 @@ const ClientArea = () => {
         </div>
 
         <div className="client_area_body">
-          {/* <div className="client_area_body_title">Client Area</div> */}
+         
           <div className="client_area_body_header">
             <CustomButton
               width={150}

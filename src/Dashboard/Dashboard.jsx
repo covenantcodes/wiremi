@@ -10,13 +10,11 @@ import CountUp from "react-countup";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import Header from "../Components/Header/Header";
+import { Link } from "react-router-dom";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Dashboard = () => {
-
-
-
   const data = {
     labels: [],
     datasets: [
@@ -49,7 +47,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard_main_container">
-      <Header/>
+      <Header />
       <div className="main_body_dashboard">
         <CustomSideBar />
 
@@ -253,7 +251,11 @@ const Dashboard = () => {
                           />
                           Incomplete
                         </td>
-                        <td>View</td>
+                        <td style={{ cursor: "pointer" }}>
+                          <Link to="/Kyc" className="table_view_nav">
+                            View
+                          </Link>
+                        </td>
                       </tr>
 
                       <tr>
