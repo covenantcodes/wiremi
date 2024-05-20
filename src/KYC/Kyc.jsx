@@ -23,21 +23,15 @@ import Typography from "@mui/material/Typography";
 const steps = [
   {
     label: "KYC Registration",
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
+    description: `02/04/20`,
   },
   {
-    label: "Create an ad group",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
+    label: "Aadhar Card and Photo Verifieation",
+    description: `07/05/20`,
   },
   {
-    label: "Create an ad",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    label: "Ration Card and Pan Card Verification",
+    description: `Incomplete`,
   },
 ];
 
@@ -244,6 +238,44 @@ const Kyc = () => {
                     <div className="document_view">View</div>
                     <div className="document_print">Print</div>
                     <div className="document_reupload">Re-upload</div>
+                  </div>
+                </div>
+
+                <div className="document_box">
+                  <div className="document_name">Pan Card</div>
+
+                  <div className="document_verification_container">
+                    <FontAwesomeIcon
+                      icon={faCircle}
+                      color="#FD334D"
+                      fontSize={12}
+                    />
+                    <div style={{ marginLeft: "8px" }}>Unverified</div>
+                  </div>
+
+                  <div className="document_cta">
+                    <div className="document_view">Upload</div>
+                    {/* <div className="document_print">Print</div> */}
+                    <div className="document_reupload">Scan</div>
+                  </div>
+                </div>
+
+                <div className="document_box">
+                  <div className="document_name">Ration Card</div>
+
+                  <div className="document_verification_container">
+                    <FontAwesomeIcon
+                      icon={faCircle}
+                      color="#FD334D"
+                      fontSize={12}
+                    />
+                    <div style={{ marginLeft: "8px" }}>Unverified</div>
+                  </div>
+
+                  <div className="document_cta">
+                    <div className="document_view">Upload</div>
+                    {/* <div className="document_print">Print</div> */}
+                    <div className="document_reupload">Scan</div>
                   </div>
                 </div>
               </div>

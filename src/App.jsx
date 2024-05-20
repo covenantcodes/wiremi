@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import ClientArea from "./Client/ClientArea";
 import Kyc from "./KYC/Kyc";
+import Finance from "./Finance/Finance";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/CustomerSupport" element={<CustomerSupport />} />
       <Route path="/ClientArea" element={<ClientArea />} />
       <Route path="/Kyc" element={<Kyc />} />
+      <Route path="/Finance" element={<Finance />} />
     </Routes>
   );
 };
