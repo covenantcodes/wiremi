@@ -196,9 +196,8 @@
 .finance_revenue_stats {
 }
 
-.finance_rr_container{
-  display: flex
-
+.finance_rr_container {
+  display: flex;
 }
 
 .finance_revenue_card {
@@ -378,57 +377,105 @@
   );
 }
 
-
-.finance_ratio_card{
+.finance_ratio_card {
   width: 40%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-
-.finance_ratio_card_header{
-  color:#9BA0AA; 
+.finance_ratio_card_header {
+  color: #9ba0aa;
   font-weight: bold;
 }
 
-.finance_ratio_card_container{
+.finance_ratio_card_container {
   display: flex;
   flex-direction: row;
 }
 
-.finance_ratio_card_header_container{
+.finance_ratio_card_header_container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #9BA0AA;
+  border-bottom: 1px solid #9ba0aa;
 }
 
-.finance_ratio_card_header_value{
+.finance_ratio_card_header_value {
   display: flex;
   justify-content: flex-end;
-  margin-top: .3rem
+  margin-top: 0.3rem;
 }
 
-.finance_middle_stats_svg_header{
+.finance_middle_stats_svg_header {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
-.ratio_progress_bar_value{
+.ratio_progress_bar_value {
   font-size: 12px;
   color: #ffcc00;
   position: relative;
-  top: 5px
+  top: 5px;
 }
 
-.ratio_progress_bar_container{
+.ratio_progress_bar_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
-.spending_target{
-  color: #9BA0AA;
+.spending_target {
+  color: #9ba0aa;
   font-size: 12px;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
+}
+
+.finance_last_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.finance_barcharts_container {
+  width: 55%;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.finance_big_ratio_container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.finance_big_ratio_card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.big_title {
+  font-size: 1.4rem;
+}
+
+.big_value {
+  font_size: 2rem;
+  padding-right: 1rem;
+}
+
+.finance_barcharts_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.finance_barcharts_header_lefttext {
+  color: #9ba0aa;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.finance_barcharts_header_middletext {
+  font-weight: bold;
+  font-size: 0.9rem;
 }

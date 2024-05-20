@@ -15,11 +15,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import TrafficSourcesChart from "../Components/TrafficSourcesChart";
+import CustomButton from "../Components/CustomButton";
 
 const Kyc = () => {
   const valueTicket = 58;
   const transactionTicket = 130;
-  const liquidityValue = 130;
+  const liquidityValue = 75;
   return (
     <div>
       <Header />
@@ -711,15 +713,11 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
@@ -770,15 +768,11 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
@@ -829,15 +823,11 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
@@ -890,15 +880,11 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
@@ -949,15 +935,11 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
@@ -1008,18 +990,78 @@ const Kyc = () => {
                   </div>
 
                   <div className="ratio_progress_bar_container">
-                        <div className="ratio_progress_bar_value">
-                            32%
-                        </div>
-                        <div className="revenue_line_progress">
-                    <div className="finance_line_progress_indicator_yellow"></div>
-                    <div className="finance_line_progress_bar_gray"></div>
-                  </div>
-
-
+                    <div className="ratio_progress_bar_value">32%</div>
+                    <div className="revenue_line_progress">
+                      <div className="finance_line_progress_indicator_yellow"></div>
+                      <div className="finance_line_progress_bar_gray"></div>
+                    </div>
                   </div>
 
                   <div className="spending_target">Spending Target</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="finance_last_container">
+            <div className="finance_barcharts_container">
+              <div className="finance_barcharts_header">
+                <div className="finance_barcharts_header_lefttext">
+                  Traffic Source
+                </div>
+                <div className="finance_barcharts_header_middletext">
+                  Filter by different social media{" "}
+                </div>
+                <CustomButton backgroundColor={"#F7BA24"} color={"#000"} width={35} fontSize={12}>
+                  Actions
+                </CustomButton>
+              </div>
+              <TrafficSourcesChart />
+            </div>
+
+            <div className="finance_big_ratio_container">
+              <div className="finance_big_ratio_card">
+                <div className="finance_ratio_card_header_container">
+                  <div className="finance_ratio_card_header">Income</div>
+                  <div className="finance_ratio_card_icon">
+                    <FontAwesomeIcon
+                      icon={faGear}
+                      color="#9BA0AA"
+                      fontSize={12}
+                    />
+                  </div>
+                </div>
+
+                <div className="finance_ratio_card_header_value">
+                  <FontAwesomeIcon
+                    icon={faBars}
+                    fontSize={12}
+                    color="#9BA0AA"
+                  />
+                </div>
+
+                <div className="finance_middle_stats_svg_header big_title">
+                  Revenue by business & none business account
+                </div>
+                <div className="finance_middle_stats_svg">
+                  <div
+                    style={{
+                      width: 180,
+                      height: 180,
+                      paddingTop: "1rem",
+                      color: "black",
+                    }}
+                  >
+                    <CircularProgressbar
+                      value={valueTicket}
+                      maxValue={100}
+                      text={`${liquidityValue}`}
+                      styles={buildStyles({
+                        // Colors
+                        pathColor: "#6E8AE8",
+                      })}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
