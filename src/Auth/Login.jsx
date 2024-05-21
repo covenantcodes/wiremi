@@ -8,7 +8,7 @@ import { faKey } from "@fortawesome/free-solid-svg-icons";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../Components/CustomInput/CustomInput";
 import { useNavigate } from "react-router-dom";
-import loadingData from "../assets/img/loading.json";
+import loadingData from "../../public/img/loading.json";
 
 const Login = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
