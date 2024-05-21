@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="header_container">
     <div className="logo_container">
-      <img src="../../src/assets/img/logo.png" />
+      <img src="../../../public/img/logo.png" />
 
       <span>Wiremi</span>
     </div>
@@ -62,14 +62,14 @@ const Header = () => {
         </div>
 
         <div className="actions_extras_container">
-          <img src="../../src/assets/img/notification.png" />
-          <img src="../../src/assets/img/email.png" />
+          <img src="../../../public/img/notification.png" />
+          <img src="../../../public/img/email.png" />
         </div>
 
         <div className="profile_header_container">
           <div className="profile_pic_container">
             <img
-              src="../../src/assets/img/profile.png"
+              src="../../../public/img/profile.png"
               className="profile_pic"
             />
           </div>
