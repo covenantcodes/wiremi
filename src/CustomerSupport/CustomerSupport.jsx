@@ -283,7 +283,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/megaphone.png" />
+                      <img src="..//img/megaphone.png" />
                     </div>
                     Chat with teams
                   </div>
@@ -292,7 +292,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/phone.png" />
+                      <img src="..//img/phone.png" />
                     </div>
                     Make a call
                   </div>
@@ -301,7 +301,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/compose.png" />
+                      <img src="..//img/compose.png" />
                     </div>
                     Compose Email
                   </div>
@@ -310,7 +310,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/compose.png" />
+                      <img src="..//img/compose.png" />
                     </div>
                     Compose Notification
                   </div>
@@ -319,7 +319,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/task.png" />
+                      <img src="..//img/task.png" />
                     </div>
                     Create a task
                   </div>
@@ -328,7 +328,7 @@ const CustomerSupport = () => {
                 <div className="views_actions_container">
                   <div className="views_actions_box">
                     <div className="views_actions_icon">
-                      <img src="../../../public/img/megaphone.png" />
+                      <img src="..//img/megaphone.png" />
                     </div>
                     Add Contact
                   </div>
@@ -386,7 +386,7 @@ const CustomerSupport = () => {
                 <div className="notification_item">
                   <div className="notification_badge">
                     <div className="notification_badge_icon img_version">
-                      <img src="../../../public/img/not_badge.png" />
+                      <img src="..//img/not_badge.png" />
                     </div>
                   </div>
                   <div className="notification_item_main">
@@ -437,7 +437,7 @@ const CustomerSupport = () => {
                 <div className="notification_item">
                   <div className="notification_badge">
                     <div className="notification_badge_icon img_version">
-                      <img src="../../../public/img/jane.png" />
+                      <img src="..//img/jane.png" />
                     </div>
                   </div>
                   <div className="notification_item_main">
@@ -539,7 +539,7 @@ const CustomerSupport = () => {
                   <div className="received_chat">
                     <div className="live_chat_side">
                       <div className="live_chat_profile">
-                        <img src="../../../public/img/jane.png" />
+                        <img src="..//img/jane.png" />
                       </div>
                       <div className="live_chat_time">10:01</div>
                     </div>
@@ -554,7 +554,7 @@ const CustomerSupport = () => {
                     <div className="sent_chat">
                       <div className="live_chat_side">
                         <div className="live_chat_profile sent_img">
-                          <img src="../../../public/img/jane.png" />
+                          <img src="..//img/jane.png" />
                         </div>
                         <div className="live_chat_time">10:04</div>
                       </div>
@@ -571,7 +571,7 @@ const CustomerSupport = () => {
                   <div className="received_chat">
                     <div className="live_chat_side">
                       <div className="live_chat_profile">
-                        <img src="../../../public/img/jane.png" />
+                        <img src="..//img/jane.png" />
                       </div>
                       <div className="live_chat_time">10:01</div>
                     </div>
@@ -588,7 +588,7 @@ const CustomerSupport = () => {
                     <div className="sent_chat">
                       <div className="live_chat_side">
                         <div className="live_chat_profile sent_img">
-                          <img src="../../../public/img/jane.png" />
+                          <img src="..//img/jane.png" />
                         </div>
                         <div className="live_chat_time">10:04</div>
                       </div>

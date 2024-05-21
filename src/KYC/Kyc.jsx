@@ -99,7 +99,7 @@ const Kyc = () => {
 
               <div className="kyc_profile_pic_container">
                 <div className="kyc_profile_pic">
-                  <img src="../../src/assets/img/man.png" />
+                  <img src="/img/man.png" />
                 </div>
               </div>
 

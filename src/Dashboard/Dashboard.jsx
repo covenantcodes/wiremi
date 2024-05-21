@@ -12,7 +12,6 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import Header from "../Components/Header/Header";
 import { Link } from "react-router-dom";
 
-
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Dashboard = () => {
@@ -55,10 +54,7 @@ const Dashboard = () => {
         <div className="side_body_dashboard">
           <div className="body_header">
             <div className="body_heading_dashboard">
-              <img
-                src="/img/waving.png"
-                className="heading_wave_img"
-              />
+              <img src="/img/waving.png" className="heading_wave_img" />
               <div className="body_heading_text">
                 Welcome, Brie Larson
                 <div className="body_subheading_text">
@@ -73,7 +69,7 @@ const Dashboard = () => {
                   <div style={{ display: "flex", width: "100%" }}>
                     {" "}
                     <img
-                      src="/img/caution.png"
+                      src="img/caution.png"
                       className="dashboard_warning_image"
                     />
                     <div className="dashboard_warning_text">
@@ -115,10 +111,7 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Downloads
-                  <img
-                    src="/img/download.png"
-                    className="stats_img"
-                  />
+                  <img src="img/download.png" className="stats_img" />
                 </div>
 
                 <div className="stats_count">
@@ -141,10 +134,7 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Verified Users
-                  <img
-                    src="/img/verified.png"
-                    className="stats_img"
-                  />
+                  <img src="img/verified.png" className="stats_img" />
                 </div>
 
                 <div className="stats_count">
@@ -167,10 +157,7 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Agents
-                  <img
-                    src="/img/agents.png"
-                    className="stats_img"
-                  />
+                  <img src="img/agents.png" className="stats_img" />
                 </div>
 
                 <div className="stats_count">
@@ -193,10 +180,7 @@ const Dashboard = () => {
               <div className="stats_box">
                 <div className="stats_header">
                   Total Organization
-                  <img
-                    src="/img/organization.png"
-                    className="stats_img"
-                  />
+                  <img src="img/organization.png" className="stats_img" />
                 </div>
 
                 <div className="stats_count">
@@ -306,10 +290,10 @@ const Dashboard = () => {
 
                       <tr>
                         <td>4</td>
-                        <td>Ravishankar prasad</td>
-                        <td>25/12/20</td>
-                        <td>AF29048421</td>
-                        <td>2/3</td>
+                        <td>Balraj Sethi</td>
+                        <td>07/04/20</td>
+                        <td>AF23048421</td>
+                        <td>1/3</td>
                         <td className="icon-text-td">
                           <FontAwesomeIcon
                             icon={faCircle}
@@ -328,31 +312,9 @@ const Dashboard = () => {
 
                       <tr>
                         <td>5</td>
-                        <td>Shivashankar Prasad</td>
+                        <td>Guddu Pandit</td>
                         <td>23/05/20</td>
                         <td>AF23048421</td>
-                        <td>2/3</td>
-                        <td className="icon-text-td">
-                          <FontAwesomeIcon
-                            icon={faCircle}
-                            color="var(--global-red)"
-                            fontSize={7}
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
-                          />
-                          Incomplete
-                        </td>
-                        <td>View</td>
-                      </tr>
-
-                      <tr>
-                        <td>6</td>
-                        <td>Ravi Shankar Shukla</td>
-                        <td>09/02/20</td>
-                        <td>AF25142455</td>
                         <td>3/3</td>
                         <td className="icon-text-td">
                           <FontAwesomeIcon
@@ -373,123 +335,119 @@ const Dashboard = () => {
                   </table>
                 </div>
 
-                <div className="kyc_request_status">
-                  <div className="kyc_request_status_heading">
-                    <span>KYC Request Status</span>
-                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                <div className="kyc_status_container_table_two">
+                  <table style={{ width: "100%", borderRadius: "13px" }}>
+                    <tr className="kyc_status_table_two_tr">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
+                    <tr className="kyc_status_table_two_tr">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
+                    <tr className="">
+                      <td>
+                        <FontAwesomeIcon icon={faSquare} fontSize={16} />
+                      </td>
+                      <td>3</td>
+                      <td>Kushagra Acharya</td>
+                      <td>Feat International</td>
+                      <td>Jan 21, 2024</td>
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faEllipsisVertical}
+                          fontSize={16}
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div className="kyc_status_charts_container">
+                <div className="kyc_status_charts_header">Charts</div>
+
+                <div className="total_kyc_request_stats">
+                  <div className="total_kyc_request_label">
+                    <div>
+                      Total KYC Request
+                      <br />
+                      <span>
+                        <CountUp start={0} end={3000} duration={3} />
+                      </span>
+                    </div>
                   </div>
 
-                  <div className="kyc_request_status_chart">
+                  <div className="total_kyc_request_doughnut">
                     <Doughnut
                       data={data}
                       options={options}
                       plugins={[textCenter]}
-                    />
-                  </div>
-
-                  <div className="kyc_request_status_chart_legends">
-                    <div>
-                      <FontAwesomeIcon
-                        icon={faSquare}
-                        color="#27BC64"
-                        style={{ paddingRight: ".5rem" }}
-                      />
-                      Complete
-                    </div>
-
-                    <div>
-                      <FontAwesomeIcon
-                        icon={faSquare}
-                        color="#EE3A3A"
-                        style={{ paddingRight: ".5rem" }}
-                      />
-                      Incomplete
-                    </div>
-
-                    <div>
-                      <FontAwesomeIcon
-                        icon={faSquare}
-                        color="#E9BD2F"
-                        style={{ paddingRight: ".5rem" }}
-                      />
-                      Pending
-                    </div>
-
-                    <div>
-                      <FontAwesomeIcon
-                        icon={faSquare}
-                        color="#ECEDEF"
-                        style={{ paddingRight: ".5rem" }}
-                      />
-                      Others
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="kyc_stats_main_container">
-                <div className="kyc_stats_box">
-                  <div className="kyc_stats_header">
-                    <img
-                      src="/img/thumbs-up.png"
-                      className="kyc_stats_image"
-                    />
-                    <div className="kyc_stats_heading">
-                      Total Approved Requests
-                    </div>
-                  </div>
-                  <div className="kyc_stats_count">
-                    <CountUp start={0} end={1200} duration={3} />
+                    ></Doughnut>
                   </div>
                 </div>
 
-                <div className="kyc_stats_box">
-                  <div className="kyc_stats_header">
-                    <img
-                      src="/img/thumbs-down.png"
-                      className="kyc_stats_image"
-                    />
-                    <div className="kyc_stats_heading">
-                      Total Rejected Requests
-                    </div>
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">
+                      Total KYC Requested
+                    </div>{" "}
+                    <div className="status_line_header_count">500 People</div>
                   </div>
-                  <div className="kyc_stats_count">
-                    <CountUp start={0} end={1200} duration={3} />
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green"></div>
+                    <div className="status_line_progress_bar_gray"></div>
                   </div>
                 </div>
 
-                <div className="kyc_stats_box">
-                  <div className="kyc_stats_header">
-                    <img
-                      src="/img/pending.png"
-                      className="kyc_stats_image"
-                    />
-                    <div className="kyc_stats_heading">
-                      Total Pending Requests
-                    </div>
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">Total KYC Rejected</div>{" "}
+                    <div className="status_line_header_count">500 People</div>
                   </div>
-                  <div className="kyc_stats_count">
-                    <CountUp start={0} end={1200} duration={3} />
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green red"></div>
+                    <div className="status_line_progress_bar_gray"></div>
                   </div>
                 </div>
 
-                <div className="kyc_stats_box">
-                  <div className="kyc_stats_header">
-                    <img
-                      src="/img/stats.png"
-                      className="kyc_stats_image"
-                    />
-                    <div className="kyc_stats_heading">Total Request</div>
+                <div className="status_line_container">
+                  <div className="status_line_header_container">
+                    <div className="status_line_header">Total KYC Pending</div>{" "}
+                    <div className="status_line_header_count">500 People</div>
                   </div>
-                  <div className="kyc_stats_count">
-                    <CountUp start={0} end={1200} duration={3} />
+                  <div className="status_line_progress">
+                    <div className="status_line_progress_indicator_green yellow"></div>
+                    <div className="status_line_progress_bar_gray"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 };
