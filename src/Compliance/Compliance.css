@@ -143,7 +143,7 @@
 
   .compliance_info_body_item_name{
     padding-bottom: .5rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold
   }
 
@@ -179,5 +179,48 @@
 }
 
 .piechart_container{
-    border: 1px solid red
+  border: 1px solid red
 }
+
+.credit-score-label {
+  border: 1px solid red;
+  padding-top: .5rem;
+  font-size: 14px;
+  fill: #333;
+}
+
+.compliance_second_transaction_history{
+  font-size: 1.3rem;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+.transaction_history_container table{
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.transaction_history_container thead{
+  background-color: #fff;
+
+}
+
+.transaction_history_container thead th{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.compliance_expenditure_container{
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.compliance_expenditure_container_header{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #01A7A7
+}
+

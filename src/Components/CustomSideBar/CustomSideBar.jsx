@@ -4,7 +4,6 @@ import {
   Sidebar,
   Menu,
   MenuItem,
-  // useProSidebar,
   SubMenu,
 } from "react-pro-sidebar";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
@@ -23,17 +22,6 @@ import LockRoundedIcon from "@mui/icons-material/LockRounded";
 import { Link } from "react-router-dom";
 
 const CustomSideBar = () => {
-  // const { collapseSidebar, isCollapsed } = useProSidebar();
-  // const [sidebarCollapsed, setSidebarCollapsed] = useState(isCollapsed);
-
-  // const handleToggleSidebar = () => {
-  //   if (sidebarCollapsed) {
-  //     collapseSidebar();
-  //   } else {
-  //     collapseSidebar();
-  //   }
-  //   setSidebarCollapsed(!sidebarCollapsed);
-  // };
   return (
     <div id="app" className="sidebar_container">
       <Sidebar className="main_sidebar">
@@ -50,21 +38,19 @@ const CustomSideBar = () => {
               fontFamily: "var(--main-font)",
               fontSize: "13px",
             }),
-
             button: {
               "&:hover": {
                 backgroundColor: "#0339A4",
                 color: "#ffffff",
               },
             },
-
             subMenuContent: {
               backgroundColor: "var(--global-sidebar)",
             },
           }}
         >
           <div
-            className="siderbar_section_title"
+            className="sidebar_section_title"
             style={{
               padding: "1.5rem",
               textAlign: "left",
@@ -72,7 +58,6 @@ const CustomSideBar = () => {
               fontFamily: "var(--main-font)",
             }}
           >
-            {" "}
             <div>Main</div>
           </div>
           <SubMenu
@@ -93,8 +78,7 @@ const CustomSideBar = () => {
             icon={<PersonRoundedIcon />}
             component={<Link to="/ClientArea" className="link" />}
           >
-            {" "}
-            Customers Area{" "}
+            Customers Area
           </MenuItem>
           <MenuItem
             icon={<SupportAgentRoundedIcon />}
@@ -152,7 +136,7 @@ const CustomSideBar = () => {
             icon={<TextSnippetRoundedIcon />}
             component={<Link to="/Compliance" className="link" />}
           >
-            Compliance{" "}
+            Compliance
             <LockRoundedIcon
               style={{
                 position: "absolute",
