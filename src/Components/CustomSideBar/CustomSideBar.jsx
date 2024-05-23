@@ -127,10 +127,10 @@ const CustomSideBar = () => {
               }}
             />
           </MenuItem>
-          <MenuItem icon={<InsertChartRoundedIcon />}
-         component={<Link to="/Finance" className="link" />}        
-            >
-
+          <MenuItem
+            icon={<InsertChartRoundedIcon />}
+            component={<Link to="/Finance" className="link" />}
+          >
             Finance Department
             <LockRoundedIcon
               style={{
@@ -148,7 +148,10 @@ const CustomSideBar = () => {
               }}
             />
           </MenuItem>
-          <MenuItem icon={<TextSnippetRoundedIcon />}>
+          <MenuItem
+            icon={<TextSnippetRoundedIcon />}
+            component={<Link to="/Compliance" className="link" />}
+          >
             Compliance{" "}
             <LockRoundedIcon
               style={{

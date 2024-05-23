@@ -164,7 +164,7 @@
 
 .processing_right_box {
   width: 50%;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
 
   font-weight: 600;
 }
@@ -174,6 +174,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
+  font-size: 1rem;
 }
 
 .document_status_container {
@@ -216,8 +217,8 @@
   padding-top: 0.5rem;
 }
 
-.document_verification_container :not(:first-child){
-  color: #FD334D
+.document_verification_container :not(:first-child) {
+  color: #fd334d;
 }
 
 .document_cta {
@@ -228,8 +229,7 @@
   padding-top: 1.5rem;
 }
 
-.document_step_container{
-  padding: 1rem
+.document_step_container {
+  padding: 1rem;
 }
-
 

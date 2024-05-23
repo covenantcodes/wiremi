@@ -6,6 +6,7 @@ import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import ClientArea from "./Client/ClientArea";
 import Kyc from "./KYC/Kyc";
 import Finance from "./Finance/Finance";
+import Compliance from "./Compliance/Compliance"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/ClientArea" element={<ClientArea />} />
       <Route path="/Kyc" element={<Kyc />} />
       <Route path="/Finance" element={<Finance />} />
+      <Route path="/Compliance" element={<Compliance />} />
     </Routes>
   );
 };
