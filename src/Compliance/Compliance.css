@@ -3,19 +3,19 @@
   }
   
   .compliance_body {
-    border: 1px solid red;
+   
     padding: 1rem;
     width: 83%;
   }
 
 .compliance_first_body{
-    border:3px solid black;
+
     padding:  1rem;
     width: 60%;
 }
 
 .compliance_info_body{
-    border: 1px solid red;
+   
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -37,7 +37,7 @@
 }
 
 .compliance_info_header {
-    border: 1px solid red;
+   
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
   }
 
   .account_info_text {
-    border: 1px solid red;
+   
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem 0rem;
@@ -163,7 +163,7 @@
   }
 
   .compliance_second_body{
-    border:3px solid black;
+
     width: 40%
   }
 
@@ -183,7 +183,7 @@
 }
 
 .credit-score-label {
-  border: 1px solid red;
+ 
   padding-top: .5rem;
   font-size: 14px;
   fill: #333;
@@ -197,7 +197,7 @@
 
 .transaction_history_container table{
   width: 100%;
-  border: 1px solid red;
+ 
   border-radius: 15px;
 }
 
@@ -213,7 +213,7 @@
 }
 
 .compliance_expenditure_container{
-  border: 1px solid red;
+ 
   padding: 1rem;
 }
 
